@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MouseCursorState_Clickable : MouseCursorState_Base
+public class MouseCursorState_Selectable : MouseCursorState_Base
 {
     public override void OnEnter()
     {

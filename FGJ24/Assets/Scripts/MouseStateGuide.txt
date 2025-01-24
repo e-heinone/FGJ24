@@ -1,0 +1,10 @@
+Mouse cursor checks the tag for object under cursor
+If item has tag which relates to cursor, change state to the corresponding state.
+If no mouse related tags, set default state.
+
+
+Adding new mouse states:
+Add new tag, name MouseCursorNAME
+Create new state class, inherit from MouseCursorState_Base, override methods within. Implement functionality.
+Add new else if into void RaycastMousePositionAndChangeState, found in MouseCursorController.cs
+
