@@ -1,5 +1,6 @@
 using System.Net;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Game : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class Game : MonoBehaviour
 
     public Counter counter;
     public Timer timer;
+    public Button smiley;
+    public Sprite gameOverSprite, winSprite, normalSprite;
 
     private Board board;
     private Cell[,] state;
@@ -34,6 +37,8 @@ public class Game : MonoBehaviour
         state = new Cell[width, height];
         gameover = false;
 
+        smiley.GetComponent<Image>().sprite = normalSprite;
+
         GenerateCells();
         GenerateMines();
         GenerateNumbers();
@@ -43,6 +48,7 @@ public class Game : MonoBehaviour
         board.Draw(state);
 
         timer.ResetTimer();
+        counter.ResetMineCounter();
     }
 
     private void GenerateCells()
@@ -240,6 +246,9 @@ public class Game : MonoBehaviour
         Debug.Log("Game Over!");
         gameover = true;
 
+        smiley.GetComponent<Image>().sprite = gameOverSprite;
+        timer.isOn = false;
+
         cell.revealed = true;
         cell.exploded = true;
         state[cell.position.x, cell.position.y] = cell;
@@ -276,6 +285,9 @@ public class Game : MonoBehaviour
 
         Debug.Log("Winner!");
         gameover = true;
+
+        smiley.GetComponent<Image>().sprite = winSprite;
+        timer.isOn = false;
 
         for (int x = 0; x < width; x++)
         {

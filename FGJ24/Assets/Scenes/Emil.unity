@@ -342,7 +342,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -176113890, guid: 8ad02625c8b84f94c836b9c94075481e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0709c65bac0a62e44aaa04074df1cff3, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -410,7 +410,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -474,6 +474,10 @@ MonoBehaviour:
   mineCount: 32
   counter: {fileID: 1698311972}
   timer: {fileID: 2140367093}
+  smiley: {fileID: 378175816}
+  gameOverSprite: {fileID: 21300000, guid: c85408c1fde270647968268dbb9c8e2e, type: 3}
+  winSprite: {fileID: 21300000, guid: d1dd05d4282734c4e89be7a39b57252e, type: 3}
+  normalSprite: {fileID: 21300000, guid: 0709c65bac0a62e44aaa04074df1cff3, type: 3}
 --- !u!156049354 &875610723
 Grid:
   m_ObjectHideFlags: 0
@@ -607,7 +611,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.63, g: 0.85499996, b: 0.9, a: 0}
+  m_BackGroundColor: {r: 0, g: 0.2059149, b: 0.4245283, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -902,7 +906,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48f25d0cbc459f644b8f143d6653f14b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tileUnknown: {fileID: 11400000, guid: c41fffb0b103f9b4d8865c61fbbd5cc4, type: 2}
+  tileUnknown: {fileID: 11400000, guid: 981fe84a554014f4c91732a2518758da, type: 2}
   tileEmpty: {fileID: 11400000, guid: 5d2fdda5b7796a64fbea8c960b2f5668, type: 2}
   tileMine: {fileID: 11400000, guid: d6da40795aef4054bb1f76617a36ca66, type: 2}
   tileExploded: {fileID: 11400000, guid: a2bfaf0950be3ce42bf6cea195f4dfc2, type: 2}
@@ -1053,6 +1057,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerText: {fileID: 2140367094}
+  isOn: 1
 --- !u!114 &2140367094
 MonoBehaviour:
   m_ObjectHideFlags: 0

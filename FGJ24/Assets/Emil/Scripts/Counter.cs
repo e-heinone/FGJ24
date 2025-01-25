@@ -34,4 +34,10 @@ public class Counter : MonoBehaviour
     {
         counterText.text = mineCount.ToString();
     }
+
+    public void ResetMineCounter()
+    {
+        counterText.text = 32.ToString();
+        mineCount = 32;
+    }
 }
