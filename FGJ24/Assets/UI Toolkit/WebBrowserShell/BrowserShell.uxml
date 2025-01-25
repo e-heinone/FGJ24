@@ -1,0 +1,55 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement name="Container" style="width: auto; height: auto; background-color: rgb(41, 45, 255);">
+        <ui:VisualElement name="TopContainer" style="flex-grow: 0; flex-direction: row; height: 5px; flex-wrap: nowrap;">
+            <ui:VisualElement name="TopLeftResize" style="background-color: rgb(0, 167, 3); transform-origin: left top; width: 5px; height: auto;" />
+            <ui:VisualElement name="TopResize" style="background-color: rgb(255, 0, 0); transform-origin: top; width: 100%; height: auto;" />
+            <ui:VisualElement name="TopRightResize" style="background-color: rgb(0, 167, 2); transform-origin: right top; width: 5px; height: auto;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="MidContainer" style="flex-grow: 1; flex-direction: row;">
+            <ui:VisualElement name="LeftResize" style="flex-grow: 1; width: 5px; height: auto; transform-origin: left; background-color: rgb(255, 0, 0);" />
+            <ui:VisualElement name="VisibleWindow" style="background-color: rgb(255, 169, 0); width: 100%; height: 100%;">
+                <ui:VisualElement name="TopBar" style="background-color: rgb(87, 105, 255); height: 25px; transform-origin: top; flex-direction: row-reverse;">
+                    <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="ExitButton" style="transform-origin: right; width: 20px; align-self: flex-end; height: 20px; right: auto; translate: 0 0;" />
+                    <ui:VisualElement style="flex-grow: 1;">
+                        <ui:Label tabindex="-1" text="Orb Explorer 3.1415926535897932" parse-escape-sequences="false" display-tooltip-when-elided="true" name="WindowName" style="-unity-text-align: middle-left; width: 100%;" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="WindowContent" style="flex-grow: 1;">
+                    <ui:VisualElement name="BrowserParent" style="flex-grow: 1;">
+                        <ui:VisualElement name="BrowserToolBar" class="ToolBar" style="flex-grow: 0; flex-shrink: 0;">
+                            <ui:VisualElement name="PageNavigationBttns" style="flex-grow: 0; flex-shrink: 0; height: 50px; width: 220px; background-color: rgb(0, 10, 94); flex-direction: row; justify-content: space-around; align-self: auto; align-items: center;">
+                                <ui:Button text="Back" parse-escape-sequences="true" display-tooltip-when-elided="true" name="BackButton" style="width: 32px; height: 32px;" />
+                                <ui:Button text="Forward" parse-escape-sequences="true" display-tooltip-when-elided="true" name="ForwardButton" style="width: 32px; height: 32px; font-size: 7px;" />
+                            </ui:VisualElement>
+                            <ui:VisualElement name="AddressBarParent" style="flex-grow: 1; background-color: rgb(255, 242, 242); flex-direction: row; height: 40px;">
+                                <ui:VisualElement name="AdressTextField" style="flex-grow: 1; flex-shrink: 0; display: flex; opacity: 1;">
+                                    <ui:TextField picking-mode="Ignore" label="Address" value="https://Website.com/Bubble" name="AddressText" style="text-overflow: ellipsis;" />
+                                </ui:VisualElement>
+                                <ui:VisualElement name="AdressGoButtonParent" style="flex-grow: 0; background-color: rgb(249, 0, 255); flex-shrink: 0; width: 110px; flex-direction: row; align-items: center; justify-content: center;">
+                                    <ui:Button text="Go" parse-escape-sequences="true" display-tooltip-when-elided="true" name="AddressGoButton" style="width: 32px; height: 32px; align-self: center; align-items: center; justify-content: flex-start; flex-direction: column; white-space: nowrap;" />
+                                </ui:VisualElement>
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                        <ui:VisualElement name="SiteContent" style="flex-grow: 1; background-color: rgb(128, 0, 0); width: 900px; height: 600px;">
+                            <ui:VisualElement name="Site01" style="flex-grow: 1; width: 900px; height: 600px; background-color: rgb(0, 244, 255); display: flex; flex-shrink: 0; visibility: visible;">
+                                <ui:Label tabindex="-1" text="This is site 01" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Label" />
+                            </ui:VisualElement>
+                            <ui:VisualElement name="Site02" style="flex-grow: 1; width: 900px; height: 600px; background-color: rgb(0, 255, 6); display: flex; flex-shrink: 0;">
+                                <ui:Label tabindex="-1" text="This is site 02" parse-escape-sequences="true" display-tooltip-when-elided="true" />
+                            </ui:VisualElement>
+                            <ui:VisualElement name="Site03" style="flex-grow: 1; width: 900px; height: 600px; background-color: rgb(255, 227, 0); display: flex; flex-shrink: 0;">
+                                <ui:Label tabindex="-1" text="This is site 03" parse-escape-sequences="true" display-tooltip-when-elided="true" />
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="RightResize" style="flex-grow: 1; transform-origin: right; width: 5px; height: auto; background-color: rgb(255, 0, 0);" />
+        </ui:VisualElement>
+        <ui:VisualElement name="BotContainer" style="flex-direction: row; height: 5px;">
+            <ui:VisualElement name="BotLeftResize" style="background-color: rgb(0, 167, 3); transform-origin: left top; width: 5px; height: auto;" />
+            <ui:VisualElement name="BotResize" style="background-color: rgb(255, 0, 0); transform-origin: top; width: 100%; height: auto;" />
+            <ui:VisualElement name="BotRightResize" style="background-color: rgb(0, 167, 2); transform-origin: right top; width: 5px; height: auto;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
