@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: WebBrowserShellPanelSettings
   m_EditorClassIdentifier: 
   themeUss: {fileID: -4733365628477956816, guid: 7b77a5e6cbaf5b64096897d243498cf6, type: 3}
-  m_TargetTexture: {fileID: 8400000, guid: 13614e4660f727a4d98dc155695d80f1, type: 2}
+  m_TargetTexture: {fileID: 0}
   m_ScaleMode: 2
   m_ReferenceSpritePixelsPerUnit: 100
   m_Scale: 1
