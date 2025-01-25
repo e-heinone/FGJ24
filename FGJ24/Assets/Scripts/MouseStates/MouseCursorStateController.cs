@@ -16,6 +16,7 @@ public class MouseCursorStateController : MonoBehaviour
 
     private void Start()
     {
+
         ChangeState(mouseCursorState_Default);
     }
 
