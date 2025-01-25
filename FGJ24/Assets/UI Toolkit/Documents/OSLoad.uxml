@@ -1,0 +1,14 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/Stylesheets/OSLoad.uss?fileID=7433441132597879392&amp;guid=fb2e15cdc363f094488878f0c5e7e430&amp;type=3#OSLoad" />
+    <ui:VisualElement name="OverlayEL" class="overlayEL" style="flex-grow: 1;">
+        <ui:VisualElement name="LogoEL" class="logoEL" style="flex-grow: 1;">
+            <ui:VisualElement name="Img" class="img" style="flex-grow: 1;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="LoadingbarEL" class="loadingbarEL" style="flex-grow: 1;">
+            <ui:ProgressBar value="0" high-value="1" focusable="false" name="Loadbar" class="progressBar" />
+        </ui:VisualElement>
+        <ui:VisualElement name="CopyrightEL" class="copyrightEL" style="flex-grow: 1;">
+            <ui:Label tabindex="-1" text="Copyright (C) 1999-79, Perl Jam" parse-escape-sequences="true" display-tooltip-when-elided="true" class="texts" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

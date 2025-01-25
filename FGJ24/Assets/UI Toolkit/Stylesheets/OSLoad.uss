@@ -1,0 +1,45 @@
+.overlayEL {
+    background-color: rgb(0, 21, 176);
+}
+
+.logoEL {
+    align-items: center;
+    justify-content: center;
+    margin-top: 69px;
+    margin-bottom: 69px;
+}
+
+.img {
+    background-color: blueviolet;
+    width: 200px;
+    height: 50px;
+}
+
+.loadingbarEL {
+    align-items: center;
+    justify-content: center;
+}
+
+.progressBar {
+    width: 600px;
+}
+
+#Loadbar .unity-progress-bar__progress
+{
+    background-color: rgb(20, 169, 0);
+}
+
+#Loadbar .unity-progress-bar
+{
+    background-color: rgb(85, 85, 85);
+}
+
+.copyrightEL {
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.texts {
+    color: aliceblue;
+    margin-bottom: 69px;
+}
