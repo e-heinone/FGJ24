@@ -12,6 +12,8 @@ public class OrbExplorer : MonoBehaviour
     private const string site02Address = "site02address";
     private VisualElement site03;
     private const string site03Address = "site03address";
+    private VisualElement site04;
+    //private const string site04Address
 
     private TextField addressBar;
 
@@ -116,5 +118,12 @@ public class OrbExplorer : MonoBehaviour
 
         OpenSite(nextSite);
     }
+
+    public void OpenLink(VisualElement targetSite)
+    {
+
+    }
+
+
 
 }

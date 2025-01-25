@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: WebBrowserShellPanelSettings
   m_EditorClassIdentifier: 
   themeUss: {fileID: -4733365628477956816, guid: 7b77a5e6cbaf5b64096897d243498cf6, type: 3}
-  m_TargetTexture: {fileID: 0}
+  m_TargetTexture: {fileID: 8400000, guid: 13614e4660f727a4d98dc155695d80f1, type: 2}
   m_ScaleMode: 2
   m_ReferenceSpritePixelsPerUnit: 100
   m_Scale: 1
@@ -24,7 +24,7 @@ MonoBehaviour:
   m_Match: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
-  m_ClearDepthStencil: 1
+  m_ClearDepthStencil: 0
   m_ClearColor: 0
   m_ColorClearValue: {r: 0, g: 0, b: 0, a: 0}
   m_DynamicAtlasSettings:
