@@ -7,6 +7,9 @@ public class Game : MonoBehaviour
     public int height = 16;
     public int mineCount = 32;
 
+    public Counter counter;
+    public Timer timer;
+
     private Board board;
     private Cell[,] state;
     private bool gameover;
@@ -26,7 +29,7 @@ public class Game : MonoBehaviour
         NewGame();
     }
 
-    private void NewGame()
+    public void NewGame()
     {
         state = new Cell[width, height];
         gameover = false;
@@ -38,6 +41,8 @@ public class Game : MonoBehaviour
         Camera.main.transform.position = new Vector3(width / 2f, height / 2f, -10f);
 
         board.Draw(state);
+
+        timer.ResetTimer();
     }
 
     private void GenerateCells()
@@ -165,9 +170,20 @@ public class Game : MonoBehaviour
             return;
         }
 
+        if (cell.flagged)
+        {
+            counter.PlusMines();
+        }
+
+        else
+        {
+            counter.MinusMines();
+        }
+
         cell.flagged = !cell.flagged;
         state[cellPosition.x, cellPosition.y] = cell;
         board.Draw(state);
+
     }
 
     private void Reveal()
