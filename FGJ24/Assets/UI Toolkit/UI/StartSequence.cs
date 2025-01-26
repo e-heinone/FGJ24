@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using UnityEngine.UIElements;
 
@@ -47,7 +48,14 @@ public class StartSequence : MonoBehaviour
         Detect3EL.AddToClassList(activeClass);
         yield return new WaitForSeconds(1);
         Detect4EL.AddToClassList(activeClass);
-        yield return new WaitForSeconds(1);
-        BackgroundEL.AddToClassList(activeClass1);
+        //yield return new WaitForSeconds(1);
+        //BackgroundEL.AddToClassList(activeClass1);
+        yield return new WaitForSeconds(2);
+        StartGame();
+    }
+
+    private void StartGame()
+    {
+        SceneManager.LoadScene(1);
     }
 }
