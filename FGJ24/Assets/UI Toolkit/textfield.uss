@@ -1,0 +1,9 @@
+#NotepadText1 .unity-base-text-field__input{
+	background-color: FFA900;
+	border-width: 0;
+}
+
+#NotepadText2 .unity-base-text-field__input{
+	background-color: FFA900;
+	border-width: 0;
+}

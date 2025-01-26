@@ -1,5 +1,5 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
-    <ui:VisualElement name="Container" style="width: 678px; height: 392px; background-color: rgb(41, 45, 255); left: 103px; top: 85px;">
+    <ui:VisualElement name="Container" style="background-color: rgb(41, 45, 255); height: 451px; width: 605px; left: 183px; top: 159px;">
         <ui:VisualElement name="TopContainer" style="flex-grow: 0; flex-direction: row; height: 5px; flex-wrap: nowrap;">
             <ui:VisualElement name="TopLeftResize" style="background-color: rgb(0, 167, 3); transform-origin: left top; width: 5px; height: auto;" />
             <ui:VisualElement name="TopResize" style="background-color: rgb(255, 0, 0); transform-origin: top; width: 100%; height: auto;" />
