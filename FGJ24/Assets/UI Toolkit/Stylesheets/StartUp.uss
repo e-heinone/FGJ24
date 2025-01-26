@@ -1,0 +1,68 @@
+.bgEL {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+}
+
+.seq1EL {
+    width: 100%;
+    height: 100%;
+}
+
+.logoTXT {
+    width: 300px;
+    height: 100px;
+    position: relative;
+    margin-left: 50px;
+    margin-top: 25px;
+}
+
+.textboxEL {
+    margin-left: 25px;
+    margin-right: 25px;
+    flex: 1;
+}
+
+.footerEL {
+    width: 300px;
+    height: 100px;
+    margin-bottom: 25px;
+    margin-left: 25px;
+}
+
+.Texts {
+    color: aliceblue;
+}
+
+.memorytestEL {
+    flex-direction: row;
+    opacity: 0;
+}
+
+.memorytestTXT {
+    width: 100px;
+    height: 50px;
+}
+
+.memorytestnumbTXT {
+    width: 100px;
+    height: 50px;
+}
+
+.copyrightTXT {
+    height: 10px;
+    opacity: 0;
+}
+
+.detects {
+    height: 5px;
+    opacity: 0;
+}
+
+.opacity {
+    opacity: 1;
+}
+
+.hidden {
+    opacity: 0;
+}

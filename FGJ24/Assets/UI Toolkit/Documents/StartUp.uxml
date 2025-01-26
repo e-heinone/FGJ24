@@ -1,0 +1,35 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/Stylesheets/StartUp.uss?fileID=7433441132597879392&amp;guid=aadcb814c86c6d34faa0ceadd2c1e05c&amp;type=3#StartUp" />
+    <ui:VisualElement name="BackgroundEL" class="bgEL">
+        <ui:VisualElement name="Seq1EL" class="seq1EL">
+            <ui:VisualElement name="LogoEL" class="logoEL" style="flex-grow: 0; flex-basis: auto; flex-shrink: 0; flex-direction: row; flex-wrap: nowrap; align-items: flex-start; align-self: auto; position: relative; opacity: 1;">
+                <ui:Label tabindex="-1" text="BubbleOS BIOS v7.9, A Bubble Os LTD&#10;Copyright (C) 1999-79, Perl Jam&#10;i7-9700K" parse-escape-sequences="true" display-tooltip-when-elided="true" name="LogoTXT" class="Texts logoTXT" style="top: auto; left: auto; position: relative;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="TextBoxEL" class="textboxEL" style="flex-basis: auto;">
+                <ui:Label tabindex="-1" text="Pentium-S CPU at 75MHz" parse-escape-sequences="true" display-tooltip-when-elided="true" name="BasicInfoTXT" class="basicinfoTXT Texts" style="margin-left: 10px;" />
+                <ui:VisualElement name="MemorytestEL" class="memorytestEL" style="flex-grow: 0; height: -287px; flex-shrink: 0;">
+                    <ui:Label tabindex="-1" text="Memory Test : " parse-escape-sequences="true" display-tooltip-when-elided="true" name="MemoryTestTXT" class="Texts memorytestTXT" style="margin-left: 10px;" />
+                    <ui:Label tabindex="-1" text="1" parse-escape-sequences="true" display-tooltip-when-elided="true" name="MemorytestnumbTXT" class="Texts memorytestnumbTXT" />
+                </ui:VisualElement>
+                <ui:VisualElement name="CopyrightEL" class="copyrightTXT" style="flex-grow: 1;">
+                    <ui:Label tabindex="-1" text="Award Plug and Play BIOS Extension v.1.0A&#10;Copyright (C) 1999, Perl Jam" parse-escape-sequences="true" display-tooltip-when-elided="true" name="CopyrightsTXT" class="Texts" style="margin-left: 10px;" />
+                </ui:VisualElement>
+                <ui:VisualElement name="Detect1EL" class="detects" style="flex-grow: 1;">
+                    <ui:Label tabindex="-1" text="Detecting IDE Primary Master .. PCemHD" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Detect1" class="Texts" style="margin-left: 10px;" />
+                </ui:VisualElement>
+                <ui:VisualElement name="Detect2EL" class="detects" style="flex-grow: 1;">
+                    <ui:Label tabindex="-1" text="Detecting IDE Primary Slave .. PCemHD" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Detect2" class="Texts" style="margin-left: 10px;" />
+                </ui:VisualElement>
+                <ui:VisualElement name="Detect3EL" class="detects" style="flex-grow: 1;">
+                    <ui:Label tabindex="-1" text="Detecting IDE Secondary Master .. None" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Detect3" class="Texts" style="margin-left: 10px;" />
+                </ui:VisualElement>
+                <ui:VisualElement name="Detect4EL" class="detects" style="flex-grow: 1;">
+                    <ui:Label tabindex="-1" text="Detecting IDE Secondary Slave .. None" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Detect4" class="Texts" style="margin-left: 10px;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="FooterEL" class="footerEL">
+                <ui:Label tabindex="-1" text="Press DEL to enter SETUP&#10;26/1/25-i7-9700K, P415L-10A13-69" parse-escape-sequences="true" display-tooltip-when-elided="true" name="FooterTXT" enable-rich-text="true" class="Texts" style="-unity-font-style: normal;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
