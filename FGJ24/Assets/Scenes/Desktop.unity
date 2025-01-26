@@ -523,15 +523,17 @@ MonoBehaviour:
 
     Laura Malinen - Art Design
 
-    Emil Nikander - Programming
+    Roosa Malinen - 2D Art
 
-    Jesse
-    Rinneranta - Programming
+    Emil
+    Nikander - Programming
+
+    Jesse Rinneranta - Programming
 
     Jyri Tero - Programming
 
-    Melinda Veijalainen
-    - Game Design
+    Melinda
+    Veijalainen - Game Design
 
 
     Minesweeper tutorial by Zigurous on Youtube
@@ -1438,6 +1440,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c519ca676c6db745a62b204c58e4c6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cursor: {fileID: 2800000, guid: c5f62957383b81240a59d53628f95f1d, type: 3}
 --- !u!1 &1598191726
 GameObject:
   m_ObjectHideFlags: 0

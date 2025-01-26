@@ -4,10 +4,13 @@ using UnityEngine;
 
 public class AppController : MonoBehaviour
 {
+    [SerializeField]
+    Texture2D cursor;
 
     private void Start()
     {
         Camera.main.transform.position = new Vector3(16 / 2f, 16 / 2f, -10f);
+        Cursor.SetCursor(cursor, Vector3.zero, CursorMode.ForceSoftware);
     }
 
     public void EnableGO(GameObject go)
