@@ -4,20 +4,35 @@ using UnityEngine;
 
 public class AppController : MonoBehaviour
 {
-    [SerializeField]
-    private GameObject minesweeperGame;
 
     private void Start()
     {
         Camera.main.transform.position = new Vector3(16 / 2f, 16 / 2f, -10f);
     }
 
-    public void EnableMinesweeper()
+    public void EnableGO(GameObject go)
     {
-        minesweeperGame.SetActive(true);
+        go.SetActive(true);
     }
-    public void DisableMinesweeper()
+
+    public void DisableGO(GameObject go)
     {
-        minesweeperGame.SetActive(false);
+        go.SetActive(false);
+    }
+
+    public void ToggleGOActiveStatus(GameObject go)
+    {
+        if (go.activeSelf)
+        {
+            go.SetActive(false);
+        }
+        else
+            go.SetActive(true);
+    }
+
+    public void QuitGame()
+    {
+        Debug.Log("App quit.");
+        Application.Quit();
     }
 }
